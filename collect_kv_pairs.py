@@ -1,9 +1,9 @@
-# Get all titles from movies list and store them as {title: id}
+# Form a single dictionary of collected key:value pairs from a list of dictionaries
 
-movies = [{'title': 'Sonic the Hedgehog', 'id': '001'}, 
-           {'title': 'Inside Out', 'id': '002'},
-           {'title': 'Toy Story IV', 'id': '003'}]
+list_of_dicts = [{'A': 1, 'B': 2}, 
+                 {'A': 3, 'B': 4},
+                 {'A': 5, 'B': 6}]
 
-collect_kv_pairs = {movie['title']:movie['id'] for movie in movies}
+collected_kv_pairs = {value['A']:value['B'] for value in list_of_dicts}
 
-print(collect_kv_pairs)
+print(collected_kv_pairs)
