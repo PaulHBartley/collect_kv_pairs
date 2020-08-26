@@ -1,4 +1,4 @@
-# select_kv_pairs
+# collect_kv_pairs
 
 This is a short Python script demonstrating how to collect key:value pairs from values contained within a list of dictionaries.
 
