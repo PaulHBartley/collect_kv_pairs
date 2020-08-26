@@ -14,7 +14,7 @@ We start with the initial list of dictionaries.
 ```
 Next, we generate a new dictionary whose key:value pairs are formed of the values from each dictionary in the list.
 ```python
-  collected_kv_pairs = {dict_value['A']:dict_value['B'] for dict_value in list_of_dicts}
+  collected_kv_pairs = {entry['A']:entry['B'] for entry in list_of_dicts}
 ```
 The resulting `collected_kv_pairs` dictionary is shown below.
 ```python

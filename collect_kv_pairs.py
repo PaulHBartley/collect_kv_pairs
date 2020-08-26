@@ -6,6 +6,6 @@ list_of_dicts = [{'A': 1, 'B': 2},
                  {'A': 7, 'B': 8},
                  {'A': 9, 'B': 10}]
 
-collected_kv_pairs = {dict_value['A']:dict_value['B'] for dict_value in list_of_dicts}
+collected_kv_pairs = {entry['A']:entry['B'] for entry in list_of_dicts}
 
 print(collected_kv_pairs)
