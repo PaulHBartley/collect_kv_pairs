@@ -1,6 +1,6 @@
 # collect_kv_pairs
 
-This is a short Python script demonstrating how to collect key:value pairs from values contained within a list of dictionaries.
+This is a short Python script demonstrating how to collect values from a list of dictionaries and store them as key:value pairs within one single dictionary.
 
 # Script Operation
 
