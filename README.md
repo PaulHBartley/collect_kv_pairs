@@ -6,18 +6,18 @@ This is a short Python script demonstrating how to collect key:value pairs from 
 
 We start with the initial list of dictionaries.
 ```python
-  list_of_dicts = [{'A': 1, 'B': 2}, 
-                   {'A': 3, 'B': 4},
-                   {'A': 5, 'B': 6},
-                   {'A': 7, 'B': 8},
-                   {'A': 9, 'B': 10}]
+  list_of_dicts = [{'A': 1, 'B': 2, 'C': 3}, 
+                   {'A': 4, 'B': 5, 'C': 6},
+                   {'A': 7, 'B': 8, 'C': 9},
+                   {'A': 10, 'B': 11, 'C': 12},
+                   {'A': 13, 'B': 14, 'C': 15}]
 ```
-Next, we generate a new dictionary whose key:value pairs are formed of the values from each dictionary in the list.
+Next, we generate a new dictionary whose key:value pairs are formed of the values specified for each dictionary in the list.
 ```python
-  collected_kv_pairs = {entry['A']:entry['B'] for entry in list_of_dicts}
+  collected_kv_pairs = {entry['A']:entry['C'] for entry in list_of_dicts}
 ```
 The resulting `collected_kv_pairs` dictionary is shown below.
 ```python
-  {1: 2, 3: 4, 5: 6, 7: 8, 9: 10}
+  {1: 3, 4: 6, 7: 9, 10: 12, 13: 15}
 ```
 
